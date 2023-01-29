@@ -6,5 +6,5 @@ class MyUDPHandler(socketserver.BaseRequestHandler):
         slog.write(self.request[0].decode("utf-8") + "\n")
         slog.close()
 
-with socketserver.UDPServer(('localhost', 514), MyUDPHandler) as server:
+with socketserver.UDPServer(('0.0.0.0', 514), MyUDPHandler) as server:
     server.serve_forever()

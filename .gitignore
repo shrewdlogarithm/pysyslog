@@ -1,0 +1,6 @@
+.vscode/
+
+*.pyc
+
+syslog_client.py
+testdata.py
